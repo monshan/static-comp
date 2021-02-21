@@ -28,6 +28,11 @@ menu > img {
   margin: 0px 10px;
 }
 
+.logo {
+  position: absolute;
+  float: right;
+}
+
 ul {
   position: absolute;
   bottom: 30px;
