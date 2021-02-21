@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,9 +13,134 @@ header {
   background-color: #2B2B2B;
   color: #EFEFEF;
   height: 125px;
+  position: sticky;
+}
+
+menu {
+  float: right;
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  color: #41BDFE;
+}
+
+menu > img {
+  margin: 0px 10px;
+}
+
+ul {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px 35px;
+}
+
+li > img {
+  margin: 0px 10px;
+}
+
+.icon {
+  max-height: 20px;
+  filter: invert(100%) ;
+}
+
+h1 {
+  margin: 30px 15px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: medium;
 }
 
 main {
   background-color: #EFEFEF;
   color: #2B2B2B;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 10fr));
+  grid-gap: 5px;
+}
+
+.share-card {
+  max-width: 350px;
+  background-color: #FFFFFF;
+  justify-self: center;
+  overflow: auto;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.views {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 15px;
+  float: right;
+  z-index: 1;
+}
+
+time {
+  color: #AFB1B3;
+}
+
+.share-btn {
+  background-image: url('assets/share-arrow.png');
+  border: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  margin: 15px;
+  position: absolute;
+  float: left;
+  z-index: 1;
+}
+
+.small-type {
+  font-size: small;
+}
+
+.header-image {
+  max-width: 100%;
+  filter: brightness(60%);
+}
+
+.custom-link {
+  background-color: #EFEFEF;
+  font-size: 14px;
+  margin: 15px 0px;
+  color: #949494;
+}
+
+.card-lower {
+  padding: 15px;
+}
+
+.card-lower > * {
+  padding: 8px;
+}
+
+.big-blue {
+  font-size: xx-large;
+  font-weight: 300;
+  color: #41BDFE;
+}
+
+.big-white {
+  font-size: xx-large;
+  font-weight: 300;
 }
