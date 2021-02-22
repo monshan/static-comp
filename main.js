@@ -43,12 +43,13 @@ window.addEventListener('load', loadCards)
 function loadCards () {
   cards.forEach(c => {
     cardArea.innerHTML += `<div class="share-card">
+    <div class='card-upper' style="background-image: url(${c.image});">
     <button class="share-btn"></button>
     <div class="views">
       <p>VIEWS</p>
       <p class="big-white">0${c.views}</p>
     </div>
-    <img class="header-image" src="${c.image}">
+    </div>
   <article class="card-lower">
     <article>
       <h2>${c.name}</h2>
