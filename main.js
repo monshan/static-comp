@@ -26,8 +26,15 @@ const card4 = {
   views: 1,
   attachments: 9
 }
+const card5 = {
+  name: 'The Lady',
+  image: 'https://d1fs8ljxwyzba6.cloudfront.net/assets/editorial/2017/05/Little-Nightmares-la-Dame-se-montre-en-vid%C3%A9o-%E2%80%93-Level-1-Google-Chrome.jpg',
+  playlist: 'Broken Mirrors',
+  views: 2,
+  attachments: 7
+}
 
-const cards = [card1, card2, card3, card4]
+const cards = [card1, card2, card3, card4, card5]
 
 const cardArea = document.getElementById('cardArea')
 
