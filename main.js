@@ -54,7 +54,7 @@ function loadCards () {
       <h2>${c.name}</h2>
       <time class="small-type">Tues 02/04/21 10:45am</time>
     </article>
-    <p class="custom-link">http://2win.2winstage.com/p/${c.name}</p>
+    <p class="custom-link">http://index.littlenightmares.com/shares/${convertName(c.name)}</p>
     <article>
       <p class="small-type">PLAYLIST</p>
       <p>${c.playlist}</p>
@@ -66,5 +66,15 @@ function loadCards () {
   </article>
 </div>`
   })
-  
+}
+
+function convertName (nameInput) {
+  const res = [...nameInput.toLowerCase()].map(char => {
+    if (char === ' ') {
+      return '-'
+    } else {
+      return char
+    }
+  }).join('')
+  return res
 }

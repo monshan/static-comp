@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -44,6 +43,7 @@ table {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   overflow: scroll;
@@ -63,6 +63,10 @@ menu {
   display: flex;
   flex-direction: row;
   color: #41BDFE;
+}
+
+menu > p {
+  padding-top: 3px;
 }
 
 menu > img {
@@ -117,6 +121,7 @@ li > img {
 h1 {
   margin: 30px 15px;
   font-weight: 400;
+  font-size: xx-large;
 }
 
 h2 {
@@ -148,7 +153,6 @@ main {
   align-items: center;
   position: absolute;
   margin: 15px;
-  float: right;
   z-index: 1;
 }
 
