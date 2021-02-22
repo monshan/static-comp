@@ -9,4 +9,4 @@ While referencing a provided comp, construct a responsive web page that adheres 
 
 <img src="assets/static-comp-challenge-2.jpg">
 
-<img src="/assets/Screen Shot 2021-02-21 at 5.09.21 PM.png">
+<img src="assets/completedSS.png">
